@@ -25,4 +25,6 @@ class HelloTest extends TestCase
         $this->view('hello.world', ['name' => 'Syifa'])
             ->assertSeeText('Syifa');
     }
+
+    // comment di blade template {{--isikomentar--}}
 }
