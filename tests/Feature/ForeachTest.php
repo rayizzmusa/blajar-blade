@@ -18,4 +18,17 @@ class ForeachTest extends TestCase
             ]
         ])->assertSeeText("makan")->assertSeeText("minum");
     }
+
+    public function testForelse()
+    {
+        $this->view("forelse", ["hobbies" => []])
+            ->assertSeeText("Tidak ada hobi");
+
+        $this->view("forelse", [
+            "hobbies" => [
+                "makan",
+                "minum"
+            ]
+        ])->assertSeeText("makan")->assertSeeText("minum");
+    }
 }
