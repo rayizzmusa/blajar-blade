@@ -1,0 +1,5 @@
+@isset($title)
+<h1>{{$title}}</h1>
+@else
+<h1>Hallo Cok</h1>
+@endisset
