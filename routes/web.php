@@ -29,3 +29,18 @@ Route::get('/world', function () {
 Route::get('/htmlencoding', function (Request $request) {
     return view('html-encoding', ['name' => $request->input('name')]);
 });
+
+Route::get('/classcss', function () {
+    return view('classcss', [
+        "hobbies" => [
+            [
+                "name" => "Game",
+                "love" => true
+            ],
+            [
+                "name" => "Watch",
+                "love" => false
+            ]
+        ]
+    ]);
+});

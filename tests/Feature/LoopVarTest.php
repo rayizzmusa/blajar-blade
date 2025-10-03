@@ -13,6 +13,6 @@ class LoopVarTest extends TestCase
         $this->view("loopvariable", ["hobbies" => ["makan", "tidur", "begadang"]])
             ->assertSeeText("1")
             ->assertSeeText("2")
-            ->assertSeeText("makan");
+            ->assertSeeText("1. makan");
     }
 }
