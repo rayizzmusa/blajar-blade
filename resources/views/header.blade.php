@@ -3,3 +3,7 @@
 @else
 <h1>Hallo Cok</h1>
 @endisset
+
+@isset($description)
+<p>{{$description}}</p>
+@endisset

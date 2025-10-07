@@ -1,7 +1,7 @@
 <html>
 
 <body>
-    @include('header')
+    @include('header', ["description" => "Kamulah masa depanku"])
     <p>Selamat datang</p>
 </body>
 
