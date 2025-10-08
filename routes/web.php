@@ -45,6 +45,10 @@ Route::get('/classcss', function () {
     ]);
 });
 
-Route::get('include', function () {
+Route::get('/include', function () {
     return view('include', ["title" => "Syifa Nur Aulia"]);
+});
+
+Route::get('/for', function () {
+    return view('yield-child', ["title" => "Syifa Aplikasi"]);
 });
