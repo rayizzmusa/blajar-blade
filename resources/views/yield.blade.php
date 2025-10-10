@@ -6,8 +6,17 @@
 </head>
 
 <body>
-    @yield('header')
-    @yield('content')
+    <!-- @yield('header') -->
+    <!-- @yield('content') -->
+
+    <!-- show directive -->
+    @section('header')
+    <p>Default header</p>
+    @show
+
+    @section('content')
+    <p>default content</p>
+    @show
 </body>
 
 </html>
